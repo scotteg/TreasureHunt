@@ -1,0 +1,21 @@
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+#endif
+
+// This toggle switches between lush textures (1) and the default iOS 6 look (0).
+#define CUSTOM_APPEARANCE 1
+
+#if CUSTOM_APPEARANCE
+extern UIColor *DarkTextColor;
+extern UIColor *LightTextColor;
+extern UIColor *SeparatorColor;
+extern UIColor *TableColor;
+#endif
