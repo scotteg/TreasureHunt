@@ -2,15 +2,14 @@
 #import "PhotoViewController.h"
 
 @interface PhotoViewController ()
-@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @end
 
 @implementation PhotoViewController
 
-- (void)viewWillLayoutSubviews
+- (void)viewWillAppear:(BOOL)animated
 {
-	[super viewWillLayoutSubviews];
+	[super viewWillAppear:animated];
 
 	// Set the content size to the scroll view to the dimensions of the image.
 	self.scrollView.contentSize = self.photo.size;

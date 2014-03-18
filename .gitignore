@@ -1,8 +1,8 @@
-# Generated documentation
-Docs
+# OS X
+.DS_Store
 
 # Xcode
-build/*
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -11,19 +11,13 @@ build/*
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
 xcuserdata
+*.xccheckout
 profile
 *.moved-aside
+DerivedData
+*.hmap
+*.ipa
 
-# OS X
-.DS_Store
-Icon?
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# CocoaPods
+Pods

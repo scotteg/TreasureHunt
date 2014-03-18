@@ -269,7 +269,7 @@
 		7B3200EA1785AECB00BACD11 = {
 			isa = PBXGroup;
 			children = (
-				7B3200FC1785AECC00BACD11 /* Loot */,
+				7B3200FC1785AECC00BACD11 /* Treasure Hunt */,
 				7B3200F51785AECC00BACD11 /* Frameworks */,
 				7B3200F41785AECC00BACD11 /* Products */,
 			);
@@ -293,7 +293,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B3200FC1785AECC00BACD11 /* Loot */ = {
+		7B3200FC1785AECC00BACD11 /* Treasure Hunt */ = {
 			isa = PBXGroup;
 			children = (
 				7BF89EFF178C4B3200F91E62 /* Data Model */,
@@ -305,6 +305,7 @@
 				7B32012B1785B4FB00BACD11 /* Launch Images */,
 				7BF89EDF178ABF3300F91E62 /* Test Data */,
 			);
+			name = "Treasure Hunt";
 			path = Loot;
 			sourceTree = "<group>";
 		};
