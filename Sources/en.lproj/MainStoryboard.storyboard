@@ -599,7 +599,7 @@
             </objects>
             <point key="canvasLocation" x="2636" y="1113"/>
         </scene>
-        <!--Award Type View Controller - Award Type-->
+        <!--Award Type View Controller-->
         <scene sceneID="X5Y-AU-YBV">
             <objects>
                 <tableViewController id="zQK-Ye-G0E" customClass="AwardTypeViewController" sceneMemberID="viewController">
@@ -618,9 +618,9 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jWe-HZ-PvD">
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -634,7 +634,7 @@
                             <outlet property="delegate" destination="zQK-Ye-G0E" id="VJP-d8-wxo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Award Type" id="uuN-7W-Qol"/>
+                    <navigationItem key="navigationItem" id="uuN-7W-Qol"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZ2-eb-eTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gCZ-zh-2sr" userLabel="Exit" sceneMemberID="exit"/>

@@ -171,7 +171,7 @@
 
 		UINavigationController *navigationController = segue.destinationViewController;
 		NewMapViewController *controller = navigationController.viewControllers[0];
-		controller.title = @"Edit Map";
+		controller.title = @"Edit";
 
 		NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
 		_indexPathToEdit = indexPath;
