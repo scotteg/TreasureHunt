@@ -225,6 +225,7 @@
 - (void)choosePhotoFromLibrary
 {
 	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+  imagePicker.view.tintColor = self.view.tintColor;
 	imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 	imagePicker.delegate = self;
 	imagePicker.allowsEditing = NO;

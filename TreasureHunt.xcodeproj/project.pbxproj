@@ -7,59 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B216B7C17A2BCFD0010D799 /* CloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B7A17A2BCFD0010D799 /* CloseButton@2x.png */; };
-		7B216B7D17A2BCFD0010D799 /* ClueButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B7B17A2BCFD0010D799 /* ClueButton@2x.png */; };
-		7B216B8A17A2C81B0010D799 /* SegmentedControl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B8817A2C81B0010D799 /* SegmentedControl@2x.png */; };
-		7B216B8B17A2C81B0010D799 /* SegmentedControlDivider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B8917A2C81B0010D799 /* SegmentedControlDivider@2x.png */; };
-		7B216B8D17A2D2860010D799 /* SwipeBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B8C17A2D2860010D799 /* SwipeBackground@2x.png */; };
-		7B216B8F17A2D65E0010D799 /* SwipeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B216B8E17A2D65E0010D799 /* SwipeButton@2x.png */; };
 		7B3200F71785AECC00BACD11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3200F61785AECC00BACD11 /* UIKit.framework */; };
 		7B3200F91785AECC00BACD11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3200F81785AECC00BACD11 /* Foundation.framework */; };
 		7B3200FB1785AECC00BACD11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3200FA1785AECC00BACD11 /* CoreGraphics.framework */; };
-		7B32012F1785B4FB00BACD11 /* MyMapsBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B3201271785B4FB00BACD11 /* MyMapsBarIcon.png */; };
-		7B3201301785B4FB00BACD11 /* MyMapsBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B3201281785B4FB00BACD11 /* MyMapsBarIcon@2x.png */; };
-		7B3201311785B4FB00BACD11 /* SharedMapsBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B3201291785B4FB00BACD11 /* SharedMapsBarIcon.png */; };
-		7B3201321785B4FB00BACD11 /* SharedMapsBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B32012A1785B4FB00BACD11 /* SharedMapsBarIcon@2x.png */; };
-		7B3201331785B4FB00BACD11 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B32012C1785B4FB00BACD11 /* Default-568h@2x.png */; };
-		7B3201341785B4FB00BACD11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B32012D1785B4FB00BACD11 /* Default.png */; };
-		7B3201351785B4FB00BACD11 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B32012E1785B4FB00BACD11 /* Default@2x.png */; };
-		7B454F1E17A51456003F1F16 /* MyMapsBarIcon-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F1C17A51456003F1F16 /* MyMapsBarIcon-Selected@2x.png */; };
-		7B454F1F17A51456003F1F16 /* MyMapsBarIcon-Unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F1D17A51456003F1F16 /* MyMapsBarIcon-Unselected@2x.png */; };
-		7B454F2417A524DA003F1F16 /* MyMapsBarIcon-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2017A524DA003F1F16 /* MyMapsBarIcon-Selected.png */; };
-		7B454F2517A524DA003F1F16 /* MyMapsBarIcon-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2117A524DA003F1F16 /* MyMapsBarIcon-Unselected.png */; };
-		7B454F2617A524DA003F1F16 /* SharedMapsBarIcon-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2217A524DA003F1F16 /* SharedMapsBarIcon-Selected.png */; };
-		7B454F2717A524DA003F1F16 /* SharedMapsBarIcon-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2317A524DA003F1F16 /* SharedMapsBarIcon-Unselected.png */; };
-		7B454F3017A528BD003F1F16 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2817A528BD003F1F16 /* Icon-72.png */; };
-		7B454F3117A528BD003F1F16 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2917A528BD003F1F16 /* Icon-72@2x.png */; };
-		7B454F3217A528BD003F1F16 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2A17A528BD003F1F16 /* Icon-Small-50.png */; };
-		7B454F3317A528BD003F1F16 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2B17A528BD003F1F16 /* Icon-Small-50@2x.png */; };
-		7B454F3417A528BD003F1F16 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2C17A528BD003F1F16 /* Icon-Small.png */; };
-		7B454F3517A528BD003F1F16 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2D17A528BD003F1F16 /* Icon-Small@2x.png */; };
-		7B454F3617A528BD003F1F16 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2E17A528BD003F1F16 /* Icon.png */; };
-		7B454F3717A528BD003F1F16 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F2F17A528BD003F1F16 /* Icon@2x.png */; };
 		7B454F3B17A5449C003F1F16 /* Jimmys Birthday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F3A17A5449C003F1F16 /* Jimmys Birthday.jpg */; };
 		7B454F3D17A54A6E003F1F16 /* Springfield.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B454F3C17A54A6E003F1F16 /* Springfield.jpg */; };
-		7B692E1C17A2E056004E1CCD /* ClueSheet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B692E1B17A2E056004E1CCD /* ClueSheet@2x.png */; };
-		7B692E1E17A2E5DD004E1CCD /* TableCellBackground-Even@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B692E1D17A2E5DD004E1CCD /* TableCellBackground-Even@2x.png */; };
-		7B692E2017A2EDC3004E1CCD /* TableFooter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B692E1F17A2EDC3004E1CCD /* TableFooter@2x.png */; };
 		7B8CA004178EDEFE00E8ED22 /* Treasure-Island-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8CA003178EDEFE00E8ED22 /* Treasure-Island-map.jpg */; };
 		7B8CA006178EE14D00E8ED22 /* Part_of_Qumran_Copper_Scroll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8CA005178EE14D00E8ED22 /* Part_of_Qumran_Copper_Scroll.jpg */; };
 		7B8CA008178EE49500E8ED22 /* El Dorado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8CA007178EE49500E8ED22 /* El Dorado.jpg */; };
-		7BA90001179F191C004D9543 /* BackButton-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA90000179F191C004D9543 /* BackButton-Portrait@2x.png */; };
-		7BA90003179F1AC2004D9543 /* BackButton-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA90002179F1AC2004D9543 /* BackButton-Landscape@2x.png */; };
-		7BA9FFA3179E80A6004D9543 /* NavBarBackground-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFA2179E80A6004D9543 /* NavBarBackground-Portrait@2x.png */; };
-		7BA9FFA5179E822B004D9543 /* ShadowDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFA4179E822B004D9543 /* ShadowDown@2x.png */; };
-		7BA9FFA7179E86AB004D9543 /* BarButtonItem-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFA6179E86AB004D9543 /* BarButtonItem-Portrait@2x.png */; };
-		7BA9FFA9179E89AB004D9543 /* AppTitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFA8179E89AB004D9543 /* AppTitle@2x.png */; };
-		7BA9FFAC179EA2B6004D9543 /* TabBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFAA179EA2B6004D9543 /* TabBarBackground@2x.png */; };
-		7BA9FFAD179EA2B6004D9543 /* ShadowUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFAB179EA2B6004D9543 /* ShadowUp@2x.png */; };
-		7BA9FFAF179EA64E004D9543 /* TabBarSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFAE179EA64E004D9543 /* TabBarSelection@2x.png */; };
-		7BA9FFB1179EB172004D9543 /* BarButtonItem-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFB0179EB172004D9543 /* BarButtonItem-Landscape@2x.png */; };
-		7BA9FFB3179EB310004D9543 /* ToolbarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFB2179EB310004D9543 /* ToolbarBackground@2x.png */; };
-		7BA9FFB5179EB5DE004D9543 /* NavBarBackground-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFB4179EB5DE004D9543 /* NavBarBackground-Landscape@2x.png */; };
-		7BA9FFB7179EB75E004D9543 /* TableBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFB6179EB75E004D9543 /* TableBackground@2x.png */; };
-		7BA9FFB9179EBAAE004D9543 /* TableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFB8179EBAAE004D9543 /* TableCellSelection@2x.png */; };
-		7BA9FFBD179EF69A004D9543 /* TableCellBackground-Odd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFBC179EF69A004D9543 /* TableCellBackground-Odd@2x.png */; };
 		7BA9FFE4179EFFA8004D9543 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFC2179EFFA8004D9543 /* AppDelegate.m */; };
 		7BA9FFE5179EFFA8004D9543 /* AwardTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFC4179EFFA8004D9543 /* AwardTypeViewController.m */; };
 		7BA9FFE6179EFFA8004D9543 /* Clue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFC6179EFFA8004D9543 /* Clue.m */; };
@@ -79,95 +34,19 @@
 		7BA9FFF5179EFFA8004D9543 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFE3179EFFA8004D9543 /* UIImage+Resize.m */; };
 		7BA9FFFA179F000E004D9543 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFF6179F000E004D9543 /* InfoPlist.strings */; };
 		7BA9FFFB179F000E004D9543 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFF8179F000E004D9543 /* MainStoryboard.storyboard */; };
-		7BA9FFFD179F0508004D9543 /* DisclosureButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFFC179F0508004D9543 /* DisclosureButton@2x.png */; };
-		7BA9FFFF179F1283004D9543 /* SearchBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFFE179F1283004D9543 /* SearchBarBackground@2x.png */; };
-		7BBF48D017A4349F00FD8CD7 /* AppTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48B617A4349F00FD8CD7 /* AppTitle.png */; };
-		7BBF48D117A4349F00FD8CD7 /* BackButton-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48B717A4349F00FD8CD7 /* BackButton-Landscape.png */; };
-		7BBF48D217A4349F00FD8CD7 /* BackButton-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48B817A4349F00FD8CD7 /* BackButton-Portrait.png */; };
-		7BBF48D317A4349F00FD8CD7 /* BarButtonItem-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48B917A4349F00FD8CD7 /* BarButtonItem-Landscape.png */; };
-		7BBF48D417A4349F00FD8CD7 /* BarButtonItem-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BA17A4349F00FD8CD7 /* BarButtonItem-Portrait.png */; };
-		7BBF48D517A4349F00FD8CD7 /* CloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BB17A4349F00FD8CD7 /* CloseButton.png */; };
-		7BBF48D617A4349F00FD8CD7 /* ClueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BC17A4349F00FD8CD7 /* ClueButton.png */; };
-		7BBF48D717A4349F00FD8CD7 /* ClueSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BD17A4349F00FD8CD7 /* ClueSheet.png */; };
-		7BBF48D817A4349F00FD8CD7 /* DisclosureButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BE17A4349F00FD8CD7 /* DisclosureButton.png */; };
-		7BBF48D917A4349F00FD8CD7 /* NavBarBackground-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48BF17A4349F00FD8CD7 /* NavBarBackground-Landscape.png */; };
-		7BBF48DA17A4349F00FD8CD7 /* NavBarBackground-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C017A4349F00FD8CD7 /* NavBarBackground-Portrait.png */; };
-		7BBF48DB17A4349F00FD8CD7 /* SearchBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C117A4349F00FD8CD7 /* SearchBarBackground.png */; };
-		7BBF48DC17A4349F00FD8CD7 /* SegmentedControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C217A4349F00FD8CD7 /* SegmentedControl.png */; };
-		7BBF48DD17A4349F00FD8CD7 /* SegmentedControlDivider.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C317A4349F00FD8CD7 /* SegmentedControlDivider.png */; };
-		7BBF48DE17A4349F00FD8CD7 /* ShadowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C417A4349F00FD8CD7 /* ShadowDown.png */; };
-		7BBF48DF17A4349F00FD8CD7 /* ShadowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C517A4349F00FD8CD7 /* ShadowUp.png */; };
-		7BBF48E017A4349F00FD8CD7 /* SwipeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C617A4349F00FD8CD7 /* SwipeBackground.png */; };
-		7BBF48E117A4349F00FD8CD7 /* SwipeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C717A4349F00FD8CD7 /* SwipeButton.png */; };
-		7BBF48E217A4349F00FD8CD7 /* TabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C817A4349F00FD8CD7 /* TabBarBackground.png */; };
-		7BBF48E317A4349F00FD8CD7 /* TabBarSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48C917A4349F00FD8CD7 /* TabBarSelection.png */; };
-		7BBF48E417A4349F00FD8CD7 /* TableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CA17A4349F00FD8CD7 /* TableBackground.png */; };
-		7BBF48E517A4349F00FD8CD7 /* TableCellBackground-Even.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CB17A4349F00FD8CD7 /* TableCellBackground-Even.png */; };
-		7BBF48E617A4349F00FD8CD7 /* TableCellBackground-Odd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CC17A4349F00FD8CD7 /* TableCellBackground-Odd.png */; };
-		7BBF48E717A4349F00FD8CD7 /* TableCellSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CD17A4349F00FD8CD7 /* TableCellSelection.png */; };
-		7BBF48E817A4349F00FD8CD7 /* TableFooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CE17A4349F00FD8CD7 /* TableFooter.png */; };
-		7BBF48E917A4349F00FD8CD7 /* ToolbarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48CF17A4349F00FD8CD7 /* ToolbarBackground.png */; };
-		7BBF48EC17A46A8200FD8CD7 /* SharedMapsBarIcon-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48EA17A46A8200FD8CD7 /* SharedMapsBarIcon-Selected@2x.png */; };
-		7BBF48ED17A46A8200FD8CD7 /* SharedMapsBarIcon-Unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBF48EB17A46A8200FD8CD7 /* SharedMapsBarIcon-Unselected@2x.png */; };
-		7BF89EE8178AC2B200F91E62 /* UnknownThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF89EE6178AC2B200F91E62 /* UnknownThumb.png */; };
-		7BF89EE9178AC2B200F91E62 /* UnknownThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF89EE7178AC2B200F91E62 /* UnknownThumb@2x.png */; };
+		D24E285018D909E600C714D2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24E284F18D909E600C714D2 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B216B7A17A2BCFD0010D799 /* CloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CloseButton@2x.png"; sourceTree = "<group>"; };
-		7B216B7B17A2BCFD0010D799 /* ClueButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClueButton@2x.png"; sourceTree = "<group>"; };
-		7B216B8817A2C81B0010D799 /* SegmentedControl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SegmentedControl@2x.png"; sourceTree = "<group>"; };
-		7B216B8917A2C81B0010D799 /* SegmentedControlDivider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SegmentedControlDivider@2x.png"; sourceTree = "<group>"; };
-		7B216B8C17A2D2860010D799 /* SwipeBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwipeBackground@2x.png"; sourceTree = "<group>"; };
-		7B216B8E17A2D65E0010D799 /* SwipeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwipeButton@2x.png"; sourceTree = "<group>"; };
 		7B3200F31785AECC00BACD11 /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3200F61785AECC00BACD11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7B3200F81785AECC00BACD11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B3200FA1785AECC00BACD11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7B3201271785B4FB00BACD11 /* MyMapsBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyMapsBarIcon.png; sourceTree = "<group>"; };
-		7B3201281785B4FB00BACD11 /* MyMapsBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyMapsBarIcon@2x.png"; sourceTree = "<group>"; };
-		7B3201291785B4FB00BACD11 /* SharedMapsBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SharedMapsBarIcon.png; sourceTree = "<group>"; };
-		7B32012A1785B4FB00BACD11 /* SharedMapsBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SharedMapsBarIcon@2x.png"; sourceTree = "<group>"; };
-		7B32012C1785B4FB00BACD11 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7B32012D1785B4FB00BACD11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7B32012E1785B4FB00BACD11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7B454F1C17A51456003F1F16 /* MyMapsBarIcon-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyMapsBarIcon-Selected@2x.png"; sourceTree = "<group>"; };
-		7B454F1D17A51456003F1F16 /* MyMapsBarIcon-Unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyMapsBarIcon-Unselected@2x.png"; sourceTree = "<group>"; };
-		7B454F2017A524DA003F1F16 /* MyMapsBarIcon-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyMapsBarIcon-Selected.png"; sourceTree = "<group>"; };
-		7B454F2117A524DA003F1F16 /* MyMapsBarIcon-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyMapsBarIcon-Unselected.png"; sourceTree = "<group>"; };
-		7B454F2217A524DA003F1F16 /* SharedMapsBarIcon-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SharedMapsBarIcon-Selected.png"; sourceTree = "<group>"; };
-		7B454F2317A524DA003F1F16 /* SharedMapsBarIcon-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SharedMapsBarIcon-Unselected.png"; sourceTree = "<group>"; };
-		7B454F2817A528BD003F1F16 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		7B454F2917A528BD003F1F16 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		7B454F2A17A528BD003F1F16 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		7B454F2B17A528BD003F1F16 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		7B454F2C17A528BD003F1F16 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		7B454F2D17A528BD003F1F16 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		7B454F2E17A528BD003F1F16 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		7B454F2F17A528BD003F1F16 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		7B454F3A17A5449C003F1F16 /* Jimmys Birthday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jimmys Birthday.jpg"; sourceTree = "<group>"; };
 		7B454F3C17A54A6E003F1F16 /* Springfield.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Springfield.jpg; sourceTree = "<group>"; };
-		7B692E1B17A2E056004E1CCD /* ClueSheet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClueSheet@2x.png"; sourceTree = "<group>"; };
-		7B692E1D17A2E5DD004E1CCD /* TableCellBackground-Even@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableCellBackground-Even@2x.png"; sourceTree = "<group>"; };
-		7B692E1F17A2EDC3004E1CCD /* TableFooter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableFooter@2x.png"; sourceTree = "<group>"; };
 		7B8CA003178EDEFE00E8ED22 /* Treasure-Island-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Treasure-Island-map.jpg"; sourceTree = "<group>"; };
 		7B8CA005178EE14D00E8ED22 /* Part_of_Qumran_Copper_Scroll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Part_of_Qumran_Copper_Scroll.jpg; sourceTree = "<group>"; };
 		7B8CA007178EE49500E8ED22 /* El Dorado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El Dorado.jpg"; sourceTree = "<group>"; };
-		7BA90000179F191C004D9543 /* BackButton-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackButton-Portrait@2x.png"; sourceTree = "<group>"; };
-		7BA90002179F1AC2004D9543 /* BackButton-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackButton-Landscape@2x.png"; sourceTree = "<group>"; };
-		7BA9FFA2179E80A6004D9543 /* NavBarBackground-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarBackground-Portrait@2x.png"; sourceTree = "<group>"; };
-		7BA9FFA4179E822B004D9543 /* ShadowDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShadowDown@2x.png"; sourceTree = "<group>"; };
-		7BA9FFA6179E86AB004D9543 /* BarButtonItem-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BarButtonItem-Portrait@2x.png"; sourceTree = "<group>"; };
-		7BA9FFA8179E89AB004D9543 /* AppTitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppTitle@2x.png"; sourceTree = "<group>"; };
-		7BA9FFAA179EA2B6004D9543 /* TabBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarBackground@2x.png"; sourceTree = "<group>"; };
-		7BA9FFAB179EA2B6004D9543 /* ShadowUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShadowUp@2x.png"; sourceTree = "<group>"; };
-		7BA9FFAE179EA64E004D9543 /* TabBarSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarSelection@2x.png"; sourceTree = "<group>"; };
-		7BA9FFB0179EB172004D9543 /* BarButtonItem-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BarButtonItem-Landscape@2x.png"; sourceTree = "<group>"; };
-		7BA9FFB2179EB310004D9543 /* ToolbarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToolbarBackground@2x.png"; sourceTree = "<group>"; };
-		7BA9FFB4179EB5DE004D9543 /* NavBarBackground-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarBackground-Landscape@2x.png"; sourceTree = "<group>"; };
-		7BA9FFB6179EB75E004D9543 /* TableBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableBackground@2x.png"; sourceTree = "<group>"; };
-		7BA9FFB8179EBAAE004D9543 /* TableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableCellSelection@2x.png"; sourceTree = "<group>"; };
-		7BA9FFBC179EF69A004D9543 /* TableCellBackground-Odd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableCellBackground-Odd@2x.png"; sourceTree = "<group>"; };
 		7BA9FFC1179EFFA8004D9543 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		7BA9FFC2179EFFA8004D9543 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sources/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		7BA9FFC3179EFFA8004D9543 /* AwardTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AwardTypeViewController.h; path = Sources/AwardTypeViewController.h; sourceTree = SOURCE_ROOT; };
@@ -205,38 +84,7 @@
 		7BA9FFE3179EFFA8004D9543 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Sources/UIImage+Resize.m"; sourceTree = SOURCE_ROOT; };
 		7BA9FFF7179F000E004D9543 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Sources/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		7BA9FFF9179F000E004D9543 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Sources/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
-		7BA9FFFC179F0508004D9543 /* DisclosureButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DisclosureButton@2x.png"; path = "Images/DisclosureButton@2x.png"; sourceTree = SOURCE_ROOT; };
-		7BA9FFFE179F1283004D9543 /* SearchBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SearchBarBackground@2x.png"; sourceTree = "<group>"; };
-		7BBF48B617A4349F00FD8CD7 /* AppTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppTitle.png; sourceTree = "<group>"; };
-		7BBF48B717A4349F00FD8CD7 /* BackButton-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackButton-Landscape.png"; sourceTree = "<group>"; };
-		7BBF48B817A4349F00FD8CD7 /* BackButton-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackButton-Portrait.png"; sourceTree = "<group>"; };
-		7BBF48B917A4349F00FD8CD7 /* BarButtonItem-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BarButtonItem-Landscape.png"; sourceTree = "<group>"; };
-		7BBF48BA17A4349F00FD8CD7 /* BarButtonItem-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BarButtonItem-Portrait.png"; sourceTree = "<group>"; };
-		7BBF48BB17A4349F00FD8CD7 /* CloseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseButton.png; sourceTree = "<group>"; };
-		7BBF48BC17A4349F00FD8CD7 /* ClueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClueButton.png; sourceTree = "<group>"; };
-		7BBF48BD17A4349F00FD8CD7 /* ClueSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClueSheet.png; sourceTree = "<group>"; };
-		7BBF48BE17A4349F00FD8CD7 /* DisclosureButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DisclosureButton.png; sourceTree = "<group>"; };
-		7BBF48BF17A4349F00FD8CD7 /* NavBarBackground-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarBackground-Landscape.png"; sourceTree = "<group>"; };
-		7BBF48C017A4349F00FD8CD7 /* NavBarBackground-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarBackground-Portrait.png"; sourceTree = "<group>"; };
-		7BBF48C117A4349F00FD8CD7 /* SearchBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchBarBackground.png; sourceTree = "<group>"; };
-		7BBF48C217A4349F00FD8CD7 /* SegmentedControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedControl.png; sourceTree = "<group>"; };
-		7BBF48C317A4349F00FD8CD7 /* SegmentedControlDivider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedControlDivider.png; sourceTree = "<group>"; };
-		7BBF48C417A4349F00FD8CD7 /* ShadowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowDown.png; sourceTree = "<group>"; };
-		7BBF48C517A4349F00FD8CD7 /* ShadowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowUp.png; sourceTree = "<group>"; };
-		7BBF48C617A4349F00FD8CD7 /* SwipeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwipeBackground.png; sourceTree = "<group>"; };
-		7BBF48C717A4349F00FD8CD7 /* SwipeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwipeButton.png; sourceTree = "<group>"; };
-		7BBF48C817A4349F00FD8CD7 /* TabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground.png; sourceTree = "<group>"; };
-		7BBF48C917A4349F00FD8CD7 /* TabBarSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarSelection.png; sourceTree = "<group>"; };
-		7BBF48CA17A4349F00FD8CD7 /* TableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableBackground.png; sourceTree = "<group>"; };
-		7BBF48CB17A4349F00FD8CD7 /* TableCellBackground-Even.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableCellBackground-Even.png"; sourceTree = "<group>"; };
-		7BBF48CC17A4349F00FD8CD7 /* TableCellBackground-Odd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableCellBackground-Odd.png"; sourceTree = "<group>"; };
-		7BBF48CD17A4349F00FD8CD7 /* TableCellSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableCellSelection.png; sourceTree = "<group>"; };
-		7BBF48CE17A4349F00FD8CD7 /* TableFooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableFooter.png; sourceTree = "<group>"; };
-		7BBF48CF17A4349F00FD8CD7 /* ToolbarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarBackground.png; sourceTree = "<group>"; };
-		7BBF48EA17A46A8200FD8CD7 /* SharedMapsBarIcon-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SharedMapsBarIcon-Selected@2x.png"; sourceTree = "<group>"; };
-		7BBF48EB17A46A8200FD8CD7 /* SharedMapsBarIcon-Unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SharedMapsBarIcon-Unselected@2x.png"; sourceTree = "<group>"; };
-		7BF89EE6178AC2B200F91E62 /* UnknownThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownThumb.png; sourceTree = "<group>"; };
-		7BF89EE7178AC2B200F91E62 /* UnknownThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnknownThumb@2x.png"; sourceTree = "<group>"; };
+		D24E284F18D909E600C714D2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,13 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				7BF89EFF178C4B3200F91E62 /* Data Model */,
-				7BF89F00178C4B4000F91E62 /* View Controllers */,
+				D24E284F18D909E600C714D2 /* Media.xcassets */,
 				7B26E796178C4B7B004049CC /* Other Sources */,
 				7B3200FD1785AECC00BACD11 /* Resources */,
-				7B3201251785B4FB00BACD11 /* Icon */,
-				7B3201261785B4FB00BACD11 /* Images */,
-				7B32012B1785B4FB00BACD11 /* Launch Images */,
 				7BF89EDF178ABF3300F91E62 /* Test Data */,
+				7BF89F00178C4B4000F91E62 /* View Controllers */,
 			);
 			name = "Treasure Hunt";
 			path = Loot;
@@ -318,104 +164,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-		};
-		7B3201251785B4FB00BACD11 /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-				7B454F2817A528BD003F1F16 /* Icon-72.png */,
-				7B454F2917A528BD003F1F16 /* Icon-72@2x.png */,
-				7B454F2A17A528BD003F1F16 /* Icon-Small-50.png */,
-				7B454F2B17A528BD003F1F16 /* Icon-Small-50@2x.png */,
-				7B454F2C17A528BD003F1F16 /* Icon-Small.png */,
-				7B454F2D17A528BD003F1F16 /* Icon-Small@2x.png */,
-				7B454F2E17A528BD003F1F16 /* Icon.png */,
-				7B454F2F17A528BD003F1F16 /* Icon@2x.png */,
-			);
-			path = Icon;
-			sourceTree = SOURCE_ROOT;
-		};
-		7B3201261785B4FB00BACD11 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				7BBF48B617A4349F00FD8CD7 /* AppTitle.png */,
-				7BA9FFA8179E89AB004D9543 /* AppTitle@2x.png */,
-				7BBF48B717A4349F00FD8CD7 /* BackButton-Landscape.png */,
-				7BA90002179F1AC2004D9543 /* BackButton-Landscape@2x.png */,
-				7BBF48B817A4349F00FD8CD7 /* BackButton-Portrait.png */,
-				7BA90000179F191C004D9543 /* BackButton-Portrait@2x.png */,
-				7BBF48B917A4349F00FD8CD7 /* BarButtonItem-Landscape.png */,
-				7BA9FFB0179EB172004D9543 /* BarButtonItem-Landscape@2x.png */,
-				7BBF48BA17A4349F00FD8CD7 /* BarButtonItem-Portrait.png */,
-				7BA9FFA6179E86AB004D9543 /* BarButtonItem-Portrait@2x.png */,
-				7BBF48BB17A4349F00FD8CD7 /* CloseButton.png */,
-				7B216B7A17A2BCFD0010D799 /* CloseButton@2x.png */,
-				7BBF48BC17A4349F00FD8CD7 /* ClueButton.png */,
-				7B216B7B17A2BCFD0010D799 /* ClueButton@2x.png */,
-				7BBF48BD17A4349F00FD8CD7 /* ClueSheet.png */,
-				7B692E1B17A2E056004E1CCD /* ClueSheet@2x.png */,
-				7BBF48BE17A4349F00FD8CD7 /* DisclosureButton.png */,
-				7BA9FFFC179F0508004D9543 /* DisclosureButton@2x.png */,
-				7B454F2017A524DA003F1F16 /* MyMapsBarIcon-Selected.png */,
-				7B454F1C17A51456003F1F16 /* MyMapsBarIcon-Selected@2x.png */,
-				7B454F2117A524DA003F1F16 /* MyMapsBarIcon-Unselected.png */,
-				7B454F1D17A51456003F1F16 /* MyMapsBarIcon-Unselected@2x.png */,
-				7B3201271785B4FB00BACD11 /* MyMapsBarIcon.png */,
-				7B3201281785B4FB00BACD11 /* MyMapsBarIcon@2x.png */,
-				7BBF48BF17A4349F00FD8CD7 /* NavBarBackground-Landscape.png */,
-				7BA9FFB4179EB5DE004D9543 /* NavBarBackground-Landscape@2x.png */,
-				7BBF48C017A4349F00FD8CD7 /* NavBarBackground-Portrait.png */,
-				7BA9FFA2179E80A6004D9543 /* NavBarBackground-Portrait@2x.png */,
-				7BBF48C117A4349F00FD8CD7 /* SearchBarBackground.png */,
-				7BA9FFFE179F1283004D9543 /* SearchBarBackground@2x.png */,
-				7BBF48C217A4349F00FD8CD7 /* SegmentedControl.png */,
-				7B216B8817A2C81B0010D799 /* SegmentedControl@2x.png */,
-				7BBF48C317A4349F00FD8CD7 /* SegmentedControlDivider.png */,
-				7B216B8917A2C81B0010D799 /* SegmentedControlDivider@2x.png */,
-				7BBF48C417A4349F00FD8CD7 /* ShadowDown.png */,
-				7BA9FFA4179E822B004D9543 /* ShadowDown@2x.png */,
-				7BBF48C517A4349F00FD8CD7 /* ShadowUp.png */,
-				7BA9FFAB179EA2B6004D9543 /* ShadowUp@2x.png */,
-				7B454F2217A524DA003F1F16 /* SharedMapsBarIcon-Selected.png */,
-				7BBF48EA17A46A8200FD8CD7 /* SharedMapsBarIcon-Selected@2x.png */,
-				7B454F2317A524DA003F1F16 /* SharedMapsBarIcon-Unselected.png */,
-				7BBF48EB17A46A8200FD8CD7 /* SharedMapsBarIcon-Unselected@2x.png */,
-				7B3201291785B4FB00BACD11 /* SharedMapsBarIcon.png */,
-				7B32012A1785B4FB00BACD11 /* SharedMapsBarIcon@2x.png */,
-				7BBF48C617A4349F00FD8CD7 /* SwipeBackground.png */,
-				7B216B8C17A2D2860010D799 /* SwipeBackground@2x.png */,
-				7BBF48C717A4349F00FD8CD7 /* SwipeButton.png */,
-				7B216B8E17A2D65E0010D799 /* SwipeButton@2x.png */,
-				7BBF48C817A4349F00FD8CD7 /* TabBarBackground.png */,
-				7BA9FFAA179EA2B6004D9543 /* TabBarBackground@2x.png */,
-				7BBF48C917A4349F00FD8CD7 /* TabBarSelection.png */,
-				7BA9FFAE179EA64E004D9543 /* TabBarSelection@2x.png */,
-				7BBF48CA17A4349F00FD8CD7 /* TableBackground.png */,
-				7BA9FFB6179EB75E004D9543 /* TableBackground@2x.png */,
-				7BBF48CB17A4349F00FD8CD7 /* TableCellBackground-Even.png */,
-				7B692E1D17A2E5DD004E1CCD /* TableCellBackground-Even@2x.png */,
-				7BBF48CC17A4349F00FD8CD7 /* TableCellBackground-Odd.png */,
-				7BA9FFBC179EF69A004D9543 /* TableCellBackground-Odd@2x.png */,
-				7BBF48CD17A4349F00FD8CD7 /* TableCellSelection.png */,
-				7BA9FFB8179EBAAE004D9543 /* TableCellSelection@2x.png */,
-				7BBF48CE17A4349F00FD8CD7 /* TableFooter.png */,
-				7B692E1F17A2EDC3004E1CCD /* TableFooter@2x.png */,
-				7BBF48CF17A4349F00FD8CD7 /* ToolbarBackground.png */,
-				7BA9FFB2179EB310004D9543 /* ToolbarBackground@2x.png */,
-				7BF89EE6178AC2B200F91E62 /* UnknownThumb.png */,
-				7BF89EE7178AC2B200F91E62 /* UnknownThumb@2x.png */,
-			);
-			path = Images;
-			sourceTree = SOURCE_ROOT;
-		};
-		7B32012B1785B4FB00BACD11 /* Launch Images */ = {
-			isa = PBXGroup;
-			children = (
-				7B32012C1785B4FB00BACD11 /* Default-568h@2x.png */,
-				7B32012D1785B4FB00BACD11 /* Default.png */,
-				7B32012E1785B4FB00BACD11 /* Default@2x.png */,
-			);
-			path = "Launch Images";
-			sourceTree = SOURCE_ROOT;
 		};
 		7BF89EDF178ABF3300F91E62 /* Test Data */ = {
 			isa = PBXGroup;
@@ -522,88 +270,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B32012F1785B4FB00BACD11 /* MyMapsBarIcon.png in Resources */,
-				7B3201301785B4FB00BACD11 /* MyMapsBarIcon@2x.png in Resources */,
-				7B3201311785B4FB00BACD11 /* SharedMapsBarIcon.png in Resources */,
-				7B3201321785B4FB00BACD11 /* SharedMapsBarIcon@2x.png in Resources */,
-				7B3201331785B4FB00BACD11 /* Default-568h@2x.png in Resources */,
-				7B3201341785B4FB00BACD11 /* Default.png in Resources */,
-				7B3201351785B4FB00BACD11 /* Default@2x.png in Resources */,
-				7BF89EE8178AC2B200F91E62 /* UnknownThumb.png in Resources */,
-				7BF89EE9178AC2B200F91E62 /* UnknownThumb@2x.png in Resources */,
 				7B8CA004178EDEFE00E8ED22 /* Treasure-Island-map.jpg in Resources */,
 				7B8CA006178EE14D00E8ED22 /* Part_of_Qumran_Copper_Scroll.jpg in Resources */,
 				7B8CA008178EE49500E8ED22 /* El Dorado.jpg in Resources */,
-				7BA9FFA3179E80A6004D9543 /* NavBarBackground-Portrait@2x.png in Resources */,
-				7BA9FFA5179E822B004D9543 /* ShadowDown@2x.png in Resources */,
-				7BA9FFA7179E86AB004D9543 /* BarButtonItem-Portrait@2x.png in Resources */,
-				7BA9FFA9179E89AB004D9543 /* AppTitle@2x.png in Resources */,
-				7BA9FFAC179EA2B6004D9543 /* TabBarBackground@2x.png in Resources */,
-				7BA9FFAD179EA2B6004D9543 /* ShadowUp@2x.png in Resources */,
-				7BA9FFAF179EA64E004D9543 /* TabBarSelection@2x.png in Resources */,
-				7BA9FFB1179EB172004D9543 /* BarButtonItem-Landscape@2x.png in Resources */,
-				7BA9FFB3179EB310004D9543 /* ToolbarBackground@2x.png in Resources */,
-				7BA9FFB5179EB5DE004D9543 /* NavBarBackground-Landscape@2x.png in Resources */,
-				7BA9FFB7179EB75E004D9543 /* TableBackground@2x.png in Resources */,
-				7BA9FFB9179EBAAE004D9543 /* TableCellSelection@2x.png in Resources */,
-				7BA9FFBD179EF69A004D9543 /* TableCellBackground-Odd@2x.png in Resources */,
+				D24E285018D909E600C714D2 /* Media.xcassets in Resources */,
 				7BA9FFFA179F000E004D9543 /* InfoPlist.strings in Resources */,
 				7BA9FFFB179F000E004D9543 /* MainStoryboard.storyboard in Resources */,
-				7BA9FFFD179F0508004D9543 /* DisclosureButton@2x.png in Resources */,
-				7BA9FFFF179F1283004D9543 /* SearchBarBackground@2x.png in Resources */,
-				7BA90001179F191C004D9543 /* BackButton-Portrait@2x.png in Resources */,
-				7BA90003179F1AC2004D9543 /* BackButton-Landscape@2x.png in Resources */,
-				7B216B7C17A2BCFD0010D799 /* CloseButton@2x.png in Resources */,
-				7B216B7D17A2BCFD0010D799 /* ClueButton@2x.png in Resources */,
-				7B216B8A17A2C81B0010D799 /* SegmentedControl@2x.png in Resources */,
-				7B216B8B17A2C81B0010D799 /* SegmentedControlDivider@2x.png in Resources */,
-				7B216B8D17A2D2860010D799 /* SwipeBackground@2x.png in Resources */,
-				7B216B8F17A2D65E0010D799 /* SwipeButton@2x.png in Resources */,
-				7B692E1C17A2E056004E1CCD /* ClueSheet@2x.png in Resources */,
-				7B692E1E17A2E5DD004E1CCD /* TableCellBackground-Even@2x.png in Resources */,
-				7B692E2017A2EDC3004E1CCD /* TableFooter@2x.png in Resources */,
-				7BBF48D017A4349F00FD8CD7 /* AppTitle.png in Resources */,
-				7BBF48D117A4349F00FD8CD7 /* BackButton-Landscape.png in Resources */,
-				7BBF48D217A4349F00FD8CD7 /* BackButton-Portrait.png in Resources */,
-				7BBF48D317A4349F00FD8CD7 /* BarButtonItem-Landscape.png in Resources */,
-				7BBF48D417A4349F00FD8CD7 /* BarButtonItem-Portrait.png in Resources */,
-				7BBF48D517A4349F00FD8CD7 /* CloseButton.png in Resources */,
-				7BBF48D617A4349F00FD8CD7 /* ClueButton.png in Resources */,
-				7BBF48D717A4349F00FD8CD7 /* ClueSheet.png in Resources */,
-				7BBF48D817A4349F00FD8CD7 /* DisclosureButton.png in Resources */,
-				7BBF48D917A4349F00FD8CD7 /* NavBarBackground-Landscape.png in Resources */,
-				7BBF48DA17A4349F00FD8CD7 /* NavBarBackground-Portrait.png in Resources */,
-				7BBF48DB17A4349F00FD8CD7 /* SearchBarBackground.png in Resources */,
-				7BBF48DC17A4349F00FD8CD7 /* SegmentedControl.png in Resources */,
-				7BBF48DD17A4349F00FD8CD7 /* SegmentedControlDivider.png in Resources */,
-				7BBF48DE17A4349F00FD8CD7 /* ShadowDown.png in Resources */,
-				7BBF48DF17A4349F00FD8CD7 /* ShadowUp.png in Resources */,
-				7BBF48E017A4349F00FD8CD7 /* SwipeBackground.png in Resources */,
-				7BBF48E117A4349F00FD8CD7 /* SwipeButton.png in Resources */,
-				7BBF48E217A4349F00FD8CD7 /* TabBarBackground.png in Resources */,
-				7BBF48E317A4349F00FD8CD7 /* TabBarSelection.png in Resources */,
-				7BBF48E417A4349F00FD8CD7 /* TableBackground.png in Resources */,
-				7BBF48E517A4349F00FD8CD7 /* TableCellBackground-Even.png in Resources */,
-				7BBF48E617A4349F00FD8CD7 /* TableCellBackground-Odd.png in Resources */,
-				7BBF48E717A4349F00FD8CD7 /* TableCellSelection.png in Resources */,
-				7BBF48E817A4349F00FD8CD7 /* TableFooter.png in Resources */,
-				7BBF48E917A4349F00FD8CD7 /* ToolbarBackground.png in Resources */,
-				7BBF48EC17A46A8200FD8CD7 /* SharedMapsBarIcon-Selected@2x.png in Resources */,
-				7BBF48ED17A46A8200FD8CD7 /* SharedMapsBarIcon-Unselected@2x.png in Resources */,
-				7B454F1E17A51456003F1F16 /* MyMapsBarIcon-Selected@2x.png in Resources */,
-				7B454F1F17A51456003F1F16 /* MyMapsBarIcon-Unselected@2x.png in Resources */,
-				7B454F2417A524DA003F1F16 /* MyMapsBarIcon-Selected.png in Resources */,
-				7B454F2517A524DA003F1F16 /* MyMapsBarIcon-Unselected.png in Resources */,
-				7B454F2617A524DA003F1F16 /* SharedMapsBarIcon-Selected.png in Resources */,
-				7B454F2717A524DA003F1F16 /* SharedMapsBarIcon-Unselected.png in Resources */,
-				7B454F3017A528BD003F1F16 /* Icon-72.png in Resources */,
-				7B454F3117A528BD003F1F16 /* Icon-72@2x.png in Resources */,
-				7B454F3217A528BD003F1F16 /* Icon-Small-50.png in Resources */,
-				7B454F3317A528BD003F1F16 /* Icon-Small-50@2x.png in Resources */,
-				7B454F3417A528BD003F1F16 /* Icon-Small.png in Resources */,
-				7B454F3517A528BD003F1F16 /* Icon-Small@2x.png in Resources */,
-				7B454F3617A528BD003F1F16 /* Icon.png in Resources */,
-				7B454F3717A528BD003F1F16 /* Icon@2x.png in Resources */,
 				7B454F3B17A5449C003F1F16 /* Jimmys Birthday.jpg in Resources */,
 				7B454F3D17A54A6E003F1F16 /* Springfield.jpg in Resources */,
 			);
@@ -683,7 +355,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -707,7 +379,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -717,6 +389,8 @@
 		7B3201221785AECC00BACD11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/TreasureHunt-Prefix.pch";
 				INFOPLIST_FILE = "Sources/TreasureHunt-Info.plist";
@@ -734,6 +408,8 @@
 		7B3201231785AECC00BACD11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/TreasureHunt-Prefix.pch";
 				INFOPLIST_FILE = "Sources/TreasureHunt-Info.plist";

@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+  self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Crown"]];
 
 	// Display an Edit button in the navigation bar.
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -40,6 +41,8 @@
 	self.tableView.separatorColor = [UIColor clearColor];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	#endif
+  
+  self.tabBarItem.selectedImage = [UIImage imageNamed:@"MyMapsBarIcon-Selected"];
 }
 
 #pragma mark - Table View

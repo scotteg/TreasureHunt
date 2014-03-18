@@ -11,7 +11,7 @@
 #endif
 
 // This toggle switches between lush textures (1) and the default iOS 6 look (0).
-#define CUSTOM_APPEARANCE 1
+#define CUSTOM_APPEARANCE 0
 
 #if CUSTOM_APPEARANCE
 extern UIColor *DarkTextColor;

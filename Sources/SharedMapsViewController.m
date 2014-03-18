@@ -60,6 +60,8 @@
 	// This hides a gray line that otherwise appears on top of the search bar.
 	self.searchDisplayController.searchBar.barStyle = UIBarStyleBlackTranslucent;
 	#endif
+  
+  self.tabBarItem.selectedImage = [UIImage imageNamed:@"SharedMapsBarIcon-Selected"];
 }
 
 - (void)viewWillAppear:(BOOL)animated

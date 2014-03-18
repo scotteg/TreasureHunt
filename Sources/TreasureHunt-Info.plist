@@ -9,24 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>Icon.png</string>
-				<string>Icon@2x.png</string>
-				<string>Icon-72.png</string>
-				<string>Icon-72@2x.png</string>
-				<string>Icon-Small.png</string>
-				<string>Icon-Small@2x.png</string>
-				<string>Icon-Small-50.png</string>
-				<string>Icon-Small-50@2x.png</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.razeware.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -60,11 +45,11 @@
 			<key>TintColor</key>
 			<dict>
 				<key>Blue</key>
-				<real>0.05098039215686274</real>
+				<real>0.050980392156862737</real>
 				<key>Green</key>
-				<real>0.07843137254901961</real>
+				<real>0.078431372549019607</real>
 				<key>Red</key>
-				<real>0.1411764705882353</real>
+				<real>0.14117647058823529</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>
