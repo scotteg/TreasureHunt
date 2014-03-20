@@ -2,6 +2,7 @@
 #import "SharedMapsViewController.h"
 #import "DataModel.h"
 #import "MapDetailViewController.h"
+#import "UIImage+ImageEffects.h"
 
 @interface SharedMapsViewController () <UIAlertViewDelegate, UISearchDisplayDelegate>
 
@@ -27,6 +28,15 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+  self.searchDisplayController.displaysSearchBarInNavigationBar = YES;
+  
+  self.tableView.backgroundColor = [UIColor colorWithRed:40/255.0f green:20/255.0f blue:10/255.0f alpha:1.0f];
+  // Remove separator line for empty cells
+  UIView *footerView = [[UIView alloc] initWithFrame:CGRectZero];
+  self.tableView.tableFooterView = footerView;
+  self.tableView.separatorColor = [UIColor colorWithWhite:0.0f alpha:0.2f];
+  self.tableView.rowHeight = 80.0f;
+  self.tableView.separatorInset = UIEdgeInsetsZero;
 
 	// This is only a sample project but in a typical app of this kind, you'd
 	// have a pull-to-refresh control that gets used to download an updated
@@ -87,16 +97,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  UITableViewCell *cell;
+  TreasureMap *map;
+  
 	if (tableView == self.searchDisplayController.searchResultsTableView) {
 		static NSString *CellIdentifier = @"SearchCell";
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+		cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 		if (cell == nil)
 			cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 
-		TreasureMap *map = _searchResults[indexPath.row];
+		map = _searchResults[indexPath.row];
 		cell.textLabel.text = map.name;
-
-		return cell;
 	}
 
 #if CUSTOM_APPEARANCE
@@ -104,7 +115,7 @@
 		// Add a torn piece of paper to the bottom of the table. This is a new
 		// cell that just shows an image; it does nothing else.
 	
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FooterCell"];
+		cell = [tableView dequeueReusableCellWithIdentifier:@"FooterCell"];
 		if (cell == nil)
 		{
 			cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FooterCell"];
@@ -113,20 +124,44 @@
 			[cell.contentView addSubview:imageView];
 			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		}
-		return cell;
 	}
 #endif
 
 	else {
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MapCell"];
+		cell = [tableView dequeueReusableCellWithIdentifier:@"MapCell"];
 
-		TreasureMap *map = _dataModel.allMaps[indexPath.row];
+		map = _dataModel.allMaps[indexPath.row];
 		cell.textLabel.text = map.name;
 		cell.detailTextLabel.text = map.sharedBy;
 		cell.imageView.image = map.thumbnail;
-
-		return cell;
 	}
+  
+  UIColor *tintColor = [UIColor colorWithRed:140/255.0f green:70/255.0f blue:35/255.0f alpha:0.2f];
+  UIImage *backgroundImage = [map.thumbnail applyBlurWithRadius:2 tintColor:tintColor saturationDeltaFactor:0.8 maskImage:nil];
+  UIImageView *imageView = [[UIImageView alloc] initWithImage:backgroundImage];
+  
+  imageView.contentMode = UIViewContentModeScaleAspectFill;
+  imageView.clipsToBounds = YES;
+  imageView.alpha = 0.8f;
+  cell.backgroundView = imageView;
+  
+  cell.imageView.layer.cornerRadius = 30.0f;
+  cell.imageView.layer.borderWidth = 1.0f;
+  cell.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+  cell.imageView.clipsToBounds = YES;
+  
+  return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  cell.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.2f];
+  cell.contentView.backgroundColor = [UIColor clearColor];
+  cell.textLabel.backgroundColor = [UIColor clearColor];
+  cell.textLabel.textColor = [UIColor colorWithWhite:0.0f alpha:0.8f];
+  cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+  cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
+  cell.tintColor = cell.textLabel.textColor;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -339,5 +374,18 @@
 
 	[self hideSwipeMenuAnimated];
 }
+
+#pragma mark - UISearchDisplayDelegate
+
+- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+  self.searchDisplayController.searchBar.showsCancelButton = YES;
+}
+
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
+{
+  self.searchDisplayController.searchBar.showsCancelButton = NO;
+}
+
 
 @end

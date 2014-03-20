@@ -35,7 +35,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-    self.awardType = _types[indexPath.row];
+  self.awardType = _types[indexPath.row];
 }
 
 #pragma mark - Table View
@@ -64,15 +64,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row != _selectedIndexPath.row) {
-        UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
-        newCell.accessoryType = UITableViewCellAccessoryCheckmark;
+  if (indexPath.row != _selectedIndexPath.row) {
+    UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
+    newCell.accessoryType = UITableViewCellAccessoryCheckmark;
 
-        UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:_selectedIndexPath];
-        oldCell.accessoryType = UITableViewCellAccessoryNone;
+    UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:_selectedIndexPath];
+    oldCell.accessoryType = UITableViewCellAccessoryNone;
 
-        _selectedIndexPath = indexPath;
-    }
+    _selectedIndexPath = indexPath;
+  }
 }
 
 #if CUSTOM_APPEARANCE

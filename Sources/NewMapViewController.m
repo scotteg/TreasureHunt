@@ -1,7 +1,6 @@
 
 #import "NewMapViewController.h"
 #import "AwardTypeViewController.h"
-#import "DatePickerViewController.h"
 
 @interface NewMapViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -11,12 +10,13 @@
 @property (nonatomic, weak) IBOutlet UIImageView *photoImageView;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 @property (nonatomic, weak) IBOutlet UILabel *awardTypeLabel;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @end
 
 @implementation NewMapViewController
 {
-	DatePickerViewController *_datePickerViewController;
+  BOOL _datePickerVisible;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -32,8 +32,10 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	self.photoImageView.hidden = YES;
+  _datePickerVisible = NO;
+  self.datePicker.hidden = YES;
 
 	// Put the values from the properties into the table view cells. These are
 	// either the default values (for a new treasure map) or the values from an
@@ -41,8 +43,8 @@
 
 	self.nameTextField.text = self.name;
 	self.instructionsTextView.text = self.instructions;
-    self.dateLabel.text = [self formatDate:self.date];
-    self.awardTypeLabel.text = self.awardType;
+  self.dateLabel.text = [self formatDate:self.date];
+  self.awardTypeLabel.text = self.awardType;
 	[self showPhoto];
 
 	// There is no button that hides the keyboard, so instead we allow the user
@@ -57,6 +59,8 @@
 	self.tableView.separatorColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 	#endif
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideDatePicker) name:UIKeyboardWillShowNotification object:nil];
 }
 
 - (void)hideKeyboard
@@ -100,7 +104,7 @@
 
 	AwardTypeViewController *controller = segue.sourceViewController;
 	self.awardType = controller.awardType;
-    self.awardTypeLabel.text = self.awardType;
+  self.awardTypeLabel.text = self.awardType;
 }
 
 #pragma mark - Table View
@@ -113,9 +117,20 @@
 		return 88.0f;
 	} else if (indexPath.section == 2 && indexPath.row == 0) {
 		return self.photoImageView.hidden ? 44.0f : 280.0f;
+  } else if (indexPath.section == 2 && indexPath.row == 2) {
+    return _datePickerVisible ? 217.0f : 0.0f;
 	} else {
 		return 44.0f;
 	}
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  if (indexPath.section == 2 && indexPath.row == 2) {
+    return nil;
+  } else {
+    return indexPath;
+  }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -133,9 +148,18 @@
 			[self choosePhotoFromLibrary];
 		} else if (indexPath.row == 1) {
 			[tableView deselectRowAtIndexPath:indexPath animated:YES];
-			[self showDatePicker];
+      
+      if (!_datePickerVisible) {
+        [self showDatePicker];
+      } else {
+        [self hideDatePicker];
+      }
+      
+      return;
 		}
 	}
+  
+  [self hideDatePicker];
 }
 
 #if CUSTOM_APPEARANCE
@@ -171,53 +195,55 @@
 
 - (void)showDatePicker
 {
-	// The date picker lives inside its own view controller. We add that as a
-	// child view controller on top of the navigation controller, so that it
-	// (temporarily) disables all of the underlying controls.
-
-	if (_datePickerViewController == nil) {
-		_datePickerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DatePickerViewController"];
-	}
-
-	if (_datePickerViewController.view.superview == nil) {
-		[self.navigationController addChildViewController:_datePickerViewController];
-		[self.navigationController.view addSubview:_datePickerViewController.view];
-		[_datePickerViewController didMoveToParentViewController:self.navigationController];
-
-		_datePickerViewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-		_datePickerViewController.date = self.date;
-		_datePickerViewController.doneButton.target = self;
-		_datePickerViewController.doneButton.action = @selector(hideDatePicker);
-
-		// Note: Using self.navigationController.view.frame does not work well
-		// in landscape mode; it always stays in the portrait dimensions, so we
-		// use a little trick by digging through the superviews instead.
-		CGRect endFrame = self.view.superview.superview.frame;
-		CGRect startFrame = endFrame;
-		startFrame.origin.y = startFrame.size.height;
-		_datePickerViewController.view.frame = startFrame;
-
-		[UIView animateWithDuration:0.4 animations:^{
-			_datePickerViewController.view.frame = endFrame;
-		}];
-	}
+  NSIndexPath *dateRowIndexPath = [NSIndexPath indexPathForRow:1 inSection:2];
+  UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:dateRowIndexPath];
+  cell.detailTextLabel.textColor = cell.detailTextLabel.tintColor;
+  
+  [self.datePicker setDate:self.date animated:NO];
+  
+  _datePickerVisible = YES;
+  
+  [self relayoutTableViewCells];
+  
+  self.datePicker.hidden = NO;
+  self.datePicker.alpha = 0.0f;
+  
+  [UIView animateWithDuration:0.25 animations:^{
+    self.datePicker.alpha = 1.0f;
+  }];
+  
+  NSIndexPath *pickerIndexPath = [NSIndexPath indexPathForRow:dateRowIndexPath.row + 1 inSection:dateRowIndexPath.section];
+  [self.tableView scrollToRowAtIndexPath:pickerIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
 - (void)hideDatePicker
 {
-	self.date = _datePickerViewController.date;
-    self.dateLabel.text = [self formatDate:self.date];
+  if (_datePickerVisible) {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:2];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    cell.detailTextLabel.textColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.5f];
+    
+    _datePickerVisible = NO;
+    [self relayoutTableViewCells];
+    
+    [UIView animateWithDuration:0.25 animations:^{
+      self.datePicker.alpha = 0.0f;
+    } completion:^(BOOL finished) {
+      self.datePicker.hidden = YES;
+    }];
+  }
+}
 
-	[UIView animateWithDuration:0.4 animations:^ {
-		CGRect endFrame = self.view.superview.superview.frame;
-		endFrame.origin.y = endFrame.size.height;
-		_datePickerViewController.view.frame = endFrame;
+- (void)relayoutTableViewCells
+{
+  [self.tableView beginUpdates];
+  [self.tableView endUpdates];
+}
 
-	} completion:^(BOOL finished) {
-		[_datePickerViewController willMoveToParentViewController:nil];
-		[_datePickerViewController.view removeFromSuperview];
-		[_datePickerViewController removeFromParentViewController];
-	}];
+- (IBAction)dateChanged:(UIDatePicker *)datePicker
+{
+  self.date = self.datePicker.date;
+  self.dateLabel.text = [self formatDate:self.date];
 }
 
 #pragma mark - Photo Picker

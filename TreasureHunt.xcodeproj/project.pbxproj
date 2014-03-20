@@ -20,7 +20,6 @@
 		7BA9FFE6179EFFA8004D9543 /* Clue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFC6179EFFA8004D9543 /* Clue.m */; };
 		7BA9FFE7179EFFA8004D9543 /* CluesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFC8179EFFA8004D9543 /* CluesViewController.m */; };
 		7BA9FFE8179EFFA8004D9543 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFCA179EFFA8004D9543 /* DataModel.m */; };
-		7BA9FFE9179EFFA8004D9543 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFCC179EFFA8004D9543 /* DatePickerViewController.m */; };
 		7BA9FFEA179EFFA8004D9543 /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFCE179EFFA8004D9543 /* InstructionsViewController.m */; };
 		7BA9FFEB179EFFA8004D9543 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFCF179EFFA8004D9543 /* main.m */; };
 		7BA9FFEC179EFFA8004D9543 /* MapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9FFD1179EFFA8004D9543 /* MapDetailViewController.m */; };
@@ -35,6 +34,7 @@
 		7BA9FFFA179F000E004D9543 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFF6179F000E004D9543 /* InfoPlist.strings */; };
 		7BA9FFFB179F000E004D9543 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9FFF8179F000E004D9543 /* MainStoryboard.storyboard */; };
 		D24E285018D909E600C714D2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24E284F18D909E600C714D2 /* Media.xcassets */; };
+		D24E286118DB358300C714D2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,6 @@
 		7BA9FFC8179EFFA8004D9543 /* CluesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CluesViewController.m; path = Sources/CluesViewController.m; sourceTree = SOURCE_ROOT; };
 		7BA9FFC9179EFFA8004D9543 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModel.h; path = Sources/DataModel.h; sourceTree = SOURCE_ROOT; };
 		7BA9FFCA179EFFA8004D9543 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModel.m; path = Sources/DataModel.m; sourceTree = SOURCE_ROOT; };
-		7BA9FFCB179EFFA8004D9543 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerViewController.h; path = Sources/DatePickerViewController.h; sourceTree = SOURCE_ROOT; };
-		7BA9FFCC179EFFA8004D9543 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerViewController.m; path = Sources/DatePickerViewController.m; sourceTree = SOURCE_ROOT; };
 		7BA9FFCD179EFFA8004D9543 /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionsViewController.h; path = Sources/InstructionsViewController.h; sourceTree = SOURCE_ROOT; };
 		7BA9FFCE179EFFA8004D9543 /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionsViewController.m; path = Sources/InstructionsViewController.m; sourceTree = SOURCE_ROOT; };
 		7BA9FFCF179EFFA8004D9543 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = SOURCE_ROOT; };
@@ -85,6 +83,9 @@
 		7BA9FFF7179F000E004D9543 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Sources/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		7BA9FFF9179F000E004D9543 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Sources/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		D24E284F18D909E600C714D2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = SOURCE_ROOT; };
+		D24E285718DB34E500C714D2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = SOURCE_ROOT; };
+		D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +135,7 @@
 		7B3200F51785AECC00BACD11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D24E285718DB34E500C714D2 /* Accelerate.framework */,
 				7B3200F61785AECC00BACD11 /* UIKit.framework */,
 				7B3200F81785AECC00BACD11 /* Foundation.framework */,
 				7B3200FA1785AECC00BACD11 /* CoreGraphics.framework */,
@@ -149,6 +151,8 @@
 				7B26E796178C4B7B004049CC /* Other Sources */,
 				7B3200FD1785AECC00BACD11 /* Resources */,
 				7BF89EDF178ABF3300F91E62 /* Test Data */,
+				D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */,
+				D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */,
 				7BF89F00178C4B4000F91E62 /* View Controllers */,
 			);
 			name = "Treasure Hunt";
@@ -197,8 +201,6 @@
 				7BA9FFC4179EFFA8004D9543 /* AwardTypeViewController.m */,
 				7BA9FFC7179EFFA8004D9543 /* CluesViewController.h */,
 				7BA9FFC8179EFFA8004D9543 /* CluesViewController.m */,
-				7BA9FFCB179EFFA8004D9543 /* DatePickerViewController.h */,
-				7BA9FFCC179EFFA8004D9543 /* DatePickerViewController.m */,
 				7BA9FFCD179EFFA8004D9543 /* InstructionsViewController.h */,
 				7BA9FFCE179EFFA8004D9543 /* InstructionsViewController.m */,
 				7BA9FFD0179EFFA8004D9543 /* MapDetailViewController.h */,
@@ -293,7 +295,6 @@
 				7BA9FFE6179EFFA8004D9543 /* Clue.m in Sources */,
 				7BA9FFE7179EFFA8004D9543 /* CluesViewController.m in Sources */,
 				7BA9FFE8179EFFA8004D9543 /* DataModel.m in Sources */,
-				7BA9FFE9179EFFA8004D9543 /* DatePickerViewController.m in Sources */,
 				7BA9FFEA179EFFA8004D9543 /* InstructionsViewController.m in Sources */,
 				7BA9FFEB179EFFA8004D9543 /* main.m in Sources */,
 				7BA9FFEC179EFFA8004D9543 /* MapDetailViewController.m in Sources */,
@@ -303,6 +304,7 @@
 				7BA9FFF0179EFFA8004D9543 /* PhotoViewController.m in Sources */,
 				7BA9FFF1179EFFA8004D9543 /* SharedMapsViewController.m in Sources */,
 				7BA9FFF2179EFFA8004D9543 /* TabBarController.m in Sources */,
+				D24E286118DB358300C714D2 /* UIImage+ImageEffects.m in Sources */,
 				7BA9FFF4179EFFA8004D9543 /* TreasureMap.m in Sources */,
 				7BA9FFF5179EFFA8004D9543 /* UIImage+Resize.m in Sources */,
 			);
@@ -391,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/TreasureHunt-Prefix.pch";
 				INFOPLIST_FILE = "Sources/TreasureHunt-Info.plist";
@@ -410,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/TreasureHunt-Prefix.pch";
 				INFOPLIST_FILE = "Sources/TreasureHunt-Info.plist";

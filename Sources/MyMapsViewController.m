@@ -3,6 +3,7 @@
 #import "DataModel.h"
 #import "NewMapViewController.h"
 #import "MapDetailViewController.h"
+#import "UIImage+ImageEffects.h"
 
 @interface MyMapsViewController () <UIActionSheetDelegate>
 
@@ -28,6 +29,14 @@
 {
 	[super viewDidLoad];
   self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Crown"]];
+  
+  self.tableView.backgroundColor = [UIColor colorWithRed:40/255.0f green:20/255.0f blue:10/255.0f alpha:1.0f];
+  // Remove separator line for empty cells
+  UIView *footerView = [[UIView alloc] initWithFrame:CGRectZero];
+  self.tableView.tableFooterView = footerView;
+  self.tableView.separatorColor = [UIColor colorWithWhite:0.0f alpha:0.2f];
+  self.tableView.rowHeight = 80.0f;
+  self.tableView.separatorInset = UIEdgeInsetsZero;
 
 	// Display an Edit button in the navigation bar.
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -80,8 +89,33 @@
 	TreasureMap *map = _dataModel.myMaps[indexPath.row];
 	cell.textLabel.text = map.name;
 	cell.imageView.image = map.thumbnail;
-
+  
+  UIColor *tintColor = [UIColor colorWithRed:140/255.0f green:70/255.0f blue:35/255.0f alpha:0.2f];
+  UIImage *backgroundImage = [map.thumbnail applyBlurWithRadius:2 tintColor:tintColor saturationDeltaFactor:0.8 maskImage:nil];
+  UIImageView *imageView = [[UIImageView alloc] initWithImage:backgroundImage];
+  
+  imageView.contentMode = UIViewContentModeScaleAspectFill;
+  imageView.clipsToBounds = YES;
+  imageView.alpha = 0.8f;
+  cell.backgroundView = imageView;
+  
+  cell.imageView.layer.cornerRadius = 30.0f;
+  cell.imageView.layer.borderWidth = 1.0f;
+  cell.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+  cell.imageView.clipsToBounds = YES;
+  
 	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  cell.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.2f];
+  cell.contentView.backgroundColor = [UIColor clearColor];
+  cell.textLabel.backgroundColor = [UIColor clearColor];
+  cell.textLabel.textColor = [UIColor colorWithWhite:0.0f alpha:0.8f];
+  cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+  cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
+  cell.tintColor = cell.textLabel.textColor;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -91,14 +125,14 @@
 		_indexPathToDelete = indexPath;
 
 		// Present an action sheet to ask for confirmation first.
-        UIActionSheet *actionSheet = [[UIActionSheet alloc]
-            initWithTitle:nil
-            delegate:self
-            cancelButtonTitle:@"Cancel"
-            destructiveButtonTitle:@"Delete"
-            otherButtonTitles:nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+      initWithTitle:nil
+      delegate:self
+      cancelButtonTitle:@"Cancel"
+      destructiveButtonTitle:@"Delete"
+      otherButtonTitles:nil];
 
-        [actionSheet showFromTabBar:self.tabBarController.tabBar];
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
 	}
 }
 
