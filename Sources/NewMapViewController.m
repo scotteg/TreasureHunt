@@ -63,6 +63,12 @@
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideDatePicker) name:UIKeyboardWillShowNotification object:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
 - (void)hideKeyboard
 {
 	// This trick dismissed the keyboard, no matter which text field or text

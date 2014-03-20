@@ -84,8 +84,8 @@
 		7BA9FFF9179F000E004D9543 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Sources/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		D24E284F18D909E600C714D2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = SOURCE_ROOT; };
 		D24E285718DB34E500C714D2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = SOURCE_ROOT; };
-		D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = SOURCE_ROOT; };
+		D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Sources/UIImage+ImageEffects.h"; sourceTree = SOURCE_ROOT; };
+		D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Sources/UIImage+ImageEffects.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,8 @@
 				7BA9FFC2179EFFA8004D9543 /* AppDelegate.m */,
 				7BA9FFCF179EFFA8004D9543 /* main.m */,
 				7BA9FFDF179EFFA8004D9543 /* TreasureHunt-Prefix.pch */,
+				D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */,
+				D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */,
 				7BA9FFE2179EFFA8004D9543 /* UIImage+Resize.h */,
 				7BA9FFE3179EFFA8004D9543 /* UIImage+Resize.m */,
 			);
@@ -151,8 +153,6 @@
 				7B26E796178C4B7B004049CC /* Other Sources */,
 				7B3200FD1785AECC00BACD11 /* Resources */,
 				7BF89EDF178ABF3300F91E62 /* Test Data */,
-				D24E285F18DB358300C714D2 /* UIImage+ImageEffects.h */,
-				D24E286018DB358300C714D2 /* UIImage+ImageEffects.m */,
 				7BF89F00178C4B4000F91E62 /* View Controllers */,
 			);
 			name = "Treasure Hunt";
